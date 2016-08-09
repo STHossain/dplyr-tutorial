@@ -1,6 +1,6 @@
 
 # "dplyr tutorial sessions"
-### author: "Hadley Wickam"
+### **author: "Hadley Wickam"**
 ### date: "August 9, 2016"
 ### output: html_document
 ======================================================================
