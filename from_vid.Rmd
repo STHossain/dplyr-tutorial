@@ -1,8 +1,8 @@
 
-# title: "dplyr tutorial sessions"
-# author: "Hadley Wickam"
-# date: "August 9, 2016"
-# output: html_document
+# "dplyr tutorial sessions"
+### author: "Hadley Wickam"
+### date: "August 9, 2016"
+### output: html_document
 ======================================================================
 
 ```{r setup, include=FALSE}
