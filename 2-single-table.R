@@ -1,6 +1,29 @@
 source("1-data.R")
 
 sfo <- filter(flights, dest == "SFO")
+
+# also could be 
+filter(flights, dest == "SFO" | dest == "OAK")
+# Not this!
+# filter(flights, dest == "SFO" | "OAK")
+
+# you can also use %in% operator
+
+# flights in January
+filter(flights, date < "2001-02-01")
+
+#something with hour
+# with filter you can supply multiple argumets and 
+# those arguments are all added together
+filter(flights, hour >= 0, hour <= 5)
+filter(flights, hour >= 0 & hour <= 5)
+
+# flights delayed by more than an hour
+filter(flights, dep_delay > 60)
+
+# arrival time is twice as much as departure delay
+filter(flights, arr_delay > 2 * dep_delay)
+
 qplot(date, dep_delay, data = sfo)
 qplot(date, arr_delay, data = sfo)
 qplot(arr_delay, dep_delay, data = sfo)
